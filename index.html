@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Team</title>
+    <link rel="icon" type="image/x-icon" href="images\ChatIcon.ico">
+    <link rel="stylesheet" href="App.css">
+</head>`    
+<body>
+    <div class="box">
+        <div class="profile-section">
+            <img src="images\profilepic.png" id="profile-pic" width="30">
+            <div class="profile-name">
+            <h1 id="project-name">Project Name</h1>
+            <h4 id="profile-name">Profile Name</h4>
+            </div>
+            <!-- <div class="profile-buttons">
+            <button class="profile-button" id="call-button"><img src="images\call.png" class="profile-button-pic"></button>
+            <button class="profile-button" id="videocall-button"><img src="images\videocall.png" class="profile-button-pic"></button>
+            </div> -->
+        </div>
+        <div class="chat-section">
+            <div class="sender"><b>You:</b>Namaste!!!</div>
+            <div class="receiver"><b>Editor2:</b>Namsakar!!!</div>
+        </div>
+        <div class="input-box">
+            <form action="#" id="input-container">
+                <input type="text" name="input-message" id="input-message">
+                <button class="input-button" id="send-button">Send</button>
+                <!-- <button class="input-button" id="media-button">up vote</button> -->
+            </form>
+        </div>
+    </div>
+    <script defer src="http://localhost:9001/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+</body>
+</html>
